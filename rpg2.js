@@ -12,74 +12,118 @@ var poisonedApple = false;
 var candy = false;
 
 function checkAnswers(answer) {
-    if (answer == "Think some more") {
-        thinkSomeMore();
-    } else if (answer == "go in" || answer == "go into the forest") {
-        enterForest();
-    } else if (answer == "go home" || answer == "ignore it and go home") {
-        homeEarly();
-    } else if (answer == "Candy house") {
-        goCandy();
-    } else if (answer == "Fruit vender") {
-        fruitVender();
-    } else if (answer == "Field") {
-        field();
-    } else if (answer == "spin in a circle") {
-        spinInCircle();
-    } else if (answer == "Hang out here") {
-        hangOut();
-    } else if (answer == "eat a mushroom") {
-        eatAMushroom();
-    } else if (answer == "offer it an apple") {
-        offerItAnApple();
-    } else if (answer == "offer it the poisoned apple") {
-        offerItAPoisonedApple();
-    } else if (answer == "Look around") {
-        lookAround();
-    } else if (answer == "offer it the apple pie") {
-        offerItTheApplePie();
-    } else if (answer == "offer it the candy") {
-        offerItTheCandy();
-    } else if (answer == "talk to it") {
-        talkToIt();
-    } else if (answer == "hide") {
-        hide();
-    } else if (answer == "hide in a bush") {
-        hideInBush();
-    } else if (answer == "turn Around") {
-        turnAround();
-    } else if (answer == "stay quite") {
-        stayQuite();
-    } else if (answer == "taken home") {
-        takenHome();
-    } else if (answer == "faerie") {
-        takenFaerie();
-    } else if (answer == "small apple" || answer == "large apple") {
-        getApples();
-    } else if (answer == "apple pie") {
-        getApplePie();
-    } else if (answer == "poisoned apple") {
-        getPoisonedApple()
-    } else if (answer == "buy nothing go back") {
-        forest();
-    } else if (answer == "yes enter") {
-        candyHouse();
-    } else if (answer == "no run") {
-        forest();
-    } else if (answer == "talk to her") {
-        talkToHer();
-    } else if (answer == "steal the candy") {
-        stealTheCandy();
-    } else if (answer == "run away") {
-        forest();
-    } else if (answer == "offer her the apple") {
-        witchEatApple();
-    } else if (answer == "grab candy and run") {
-        grabCandyandrun();
-    } else if (answer == "run away") {
-        runAway();
-    } else if (answer == "tea") {
-        tea();
+    switch(answer) {
+        case "Think some more":
+            thinkSomeMore();
+            break;
+        case "go in":
+            enterForest();
+            break;
+        case "go into the forest":
+            enterForest();
+            break;
+        case "go home":
+            homeEarly();
+            break;
+        case "ignore it and go home":
+            homeEarly();
+            break;
+        case "Candy house":
+            goCandy();
+            break;
+        case "Fruit vender":
+            fruitVender();
+            break;
+        case "Field":
+            field();
+            break;
+        case "spin in a circle":
+            spinInCircle();
+            break;
+        case "Hang out here":
+            hangOut();
+            break;
+        case "eat a mushroom":
+            eatAMushroom();
+            break;
+        case "offer it an apple":
+            offerItAnApple();
+            break;
+        case "offer it the poisoned apple":
+            offerItAPoisonedApple();
+            break;
+        case "Look around":
+            lookAround();
+            break;
+        case "offer it the apple pie":
+            offerItTheApplePie();
+            break;
+        case "offer it the candy":
+            offerItTheCandy();
+            break;
+        case "talk to it":
+            talkToIt();
+            break;
+        case "hide":
+            hide();
+            break;
+        case "hide in a bush":
+            hideInBush();
+            break;
+        case "turn Around":
+            turnAround();
+            break;
+        case "stay quite":
+            stayQuite();
+            break;
+        case "taken home":
+            takenHome();
+            break;
+        case "faerie":
+            takenFaerie();
+            break;
+        case "small apple":
+            getApples();
+            break;
+        case "large apple":
+            getApples();
+            break;
+        case "apple pie":
+            getApplePie();
+            break;
+        case "poisoned apple":
+            getPoisonedApple()
+            break;
+        case "buy nothing go back":
+            forest();
+            break;
+        case "yes enter":
+            candyHouse();
+            break;
+        case "no run":
+            forest();
+            break;
+        case "talk to her":
+            talkToHer();
+            break;
+        case "steal the candy":
+            stealTheCandy();
+            break;
+        case "run away":
+            forest();
+            break;
+        case "offer her the apple":
+            witchEatApple();
+            break;
+        case "grab candy and run":
+            grabCandyandrun();
+            break;
+        case "run away":
+            runAway();
+            break;
+        case "tea":
+            tea();
+            break;
     }
 }
 
@@ -102,7 +146,7 @@ function thinkSomeMore() {
 \nWhat do you want to do?");
     choices = ["go in", "go home"];
     answer = setOptions(choices);
-    
+
 }
 
 function enterForest() {
@@ -118,7 +162,7 @@ function goCandy() {
 
     choices = ["yes enter", "no run"];
     answer = setOptions(choices);
-   
+
 }
 
 function hangOut() {
@@ -173,7 +217,7 @@ function forest() {
 
     choices = ["Candy house", "Fruit vender", "Field", "Hang out here", "spin in a circle"];
     answer = setOptions(choices);
-   
+
 }
 
 function field() {
@@ -183,7 +227,7 @@ function field() {
 
     choices = ["eat a mushroom", "Look around", "hide in a bush"];
     answer = setOptions(choices);
-    
+
 }
 
 function eatAMushroom() {
@@ -222,7 +266,7 @@ function hideInBush() {
         choices.push("offer it the candy")
     }
     answer = setOptions(choices);
-   
+
 }
 
 function stayQuite() {
@@ -284,7 +328,7 @@ function offerItTheCandy() {
         \nor if you want I can send you home");
     choices = ["home", "faerie"];
     answer = setOptions(choices);
-   
+
 }
 
 function takenHome() {
@@ -311,7 +355,7 @@ function fruitVender() {
 
     choices = ["small apple", "large apple", "apple pie", "poisoned apple", "buy nothing go back"];
     answer = setOptions(choices);
-    
+
 }
 
 function getApples() {
@@ -338,7 +382,7 @@ function candyHouse() {
     \nWhat do you want to do?");
     choices = ["talk to her", "steal the candy", "run away"];
     answer = setOptions(choices);
-   
+
 }
 
 function talkToHer() {
@@ -372,7 +416,7 @@ function stealTheCandy() {
 
     choices = ["hide", "grab candy and run"]
     answer = setOptions(choices);
-   
+
 }
 
 function hide() {
