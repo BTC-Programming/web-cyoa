@@ -1,3 +1,5 @@
+/* This is a starter with examples.  Remove the examples once you have made your own versions. */
+
 'use strict'
 // core variables
 var messages = []; // for a sequence of messages
