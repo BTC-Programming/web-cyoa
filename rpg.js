@@ -1,6 +1,6 @@
 'use strict'
 // core variables
-var messages = [];
+var messages = []; // for a sequence of messages
 var choices = [];
 var answer = null;
 // story function variables
@@ -16,11 +16,11 @@ window.onload = start;  // Kicks off program
 
 function checkAnswers(answer) {  // Matches Scenes  - replace with yours
     // if (answer == "Think some more") {
-        // thinkSomeMore();
+    //    thinkSomeMore();
     // } 
-    // else if (answer == "go in" || answer == "go into the forest") {
-        // enterForest();
-   // }
+    //  else if (answer == "spin in a circle") {
+    //    spinInCircle();
+    // }
 }
 
 
@@ -41,7 +41,7 @@ function forest() {  // SET A SCENE
  * \nThere is a small opening in the trees with a ring of mushroom in the middle");
  * 
  * choices = ["Candy house", "Fruit vender", "Field", "Hang out here", "spin in a circle"];
- *  answer = setOptions(choices);
+ * answer = setOptions(choices);
  *    
  * }
  */ 
@@ -72,4 +72,11 @@ function forest() {  // SET A SCENE
  * }
  */
  
-
+/* function stayQuite() { // Message Example
+ * messages=["so your too good to talk to me huh",
+ *         "big old person too proud to talk to a pixie",
+ *         " you hear the pixie fly away in disgust"];
+ *    delayText(messages, 3000, field);
+ * 
+ * } 
+ */
