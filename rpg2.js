@@ -1,3 +1,5 @@
+/* Uses Case Statements */
+
 'use strict'
 // variables
 var name = "";
