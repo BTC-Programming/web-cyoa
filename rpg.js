@@ -35,7 +35,7 @@ function checkAnswers(answer) {  // Matches Scenes  - replace with yours
  * }
  */ 
   
-function forest() {  // SET A SCENE
+/* function forest() {  // SET A SCENE
  * story("There is a house made of candy\
  * \nThere is a fruit vender\
  * \nThere is a small opening in the trees with a ring of mushroom in the middle");
