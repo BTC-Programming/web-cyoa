@@ -430,10 +430,3 @@ function homeEarly() {
     delayText(messages, 2000);
 
 }
-
-var start = function () {
-    setup();
-    town();
-}
-
-window.onload = start;
