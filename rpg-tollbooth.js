@@ -51,10 +51,3 @@ function tollbooth(){  // FIRST SCENE - WELCOMES PLAYER
 	choices = ["Enter now", "Sleep on it", "Tell mom"];
 	answer = setOptions(choices);
 }
-
-var start = function () {
-    setup(); // Helper Function
-    tollbooth();  // Change this to fit your first scene
-}
-
-window.onload = start;  // Kicks off program
