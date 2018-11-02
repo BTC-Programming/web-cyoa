@@ -9,12 +9,6 @@ var answer = null;
 var name = null;
 var spin = 0;
 
-var start = function () {
-    setup(); // Helper Function
-    town();  // Change this to fit your first scene
-}
-
-window.onload = start;  // Kicks off program
 
 function checkAnswers(answer) {  // Matches Scenes  - replace with yours
     // if (answer == "Think some more") {
