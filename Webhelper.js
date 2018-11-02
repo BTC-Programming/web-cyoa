@@ -1,5 +1,11 @@
 var buttonElement = document.getElementById("button1");
 
+window.onload = start;
+
+function start() {
+    setup();
+    town();
+}
 
 function story(text) {
     var currentStoryElement = document.getElementById("currentStory");
