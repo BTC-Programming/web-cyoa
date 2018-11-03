@@ -1,16 +1,17 @@
 /* This is a starter with examples.  Remove the examples once you have made your own versions. */
 
 'use strict'
+
 // core variables
 var messages = []; // for a sequence of messages
 var choices = [];
 var answer = null;
+
 // story function variables
 var name = null;
 var spin = 0;
 
-
-function checkAnswers(answer) {  // Matches Scenes  - replace with yours
+function checkAnswers(answer) {  // Function names match story scenes. Replace with your functions
     // if (answer == "Think some more") {
     //    thinkSomeMore();
     // } 
@@ -20,7 +21,7 @@ function checkAnswers(answer) {  // Matches Scenes  - replace with yours
 }
 
 
-/* function town(){  // FIRST SCENE - WELCOMES PLAYER
+/* function town(){  // FIRST STORY SCENE - WELCOMES PLAYER
  * var name = prompt("what is your name?");
  * story("One day you are on your way home from school and you hear a whisper coming from a dark forest you never remember seeing before\
  * \nCome here " + name + " Come here\
@@ -31,7 +32,7 @@ function checkAnswers(answer) {  // Matches Scenes  - replace with yours
  * }
  */ 
   
-/* function forest() {  // SET A SCENE
+/* function forest() {  // HOW TO SET A SCENE
  * story("There is a house made of candy\
  * \nThere is a fruit vender\
  * \nThere is a small opening in the trees with a ring of mushroom in the middle");
@@ -42,8 +43,8 @@ function checkAnswers(answer) {  // Matches Scenes  - replace with yours
  * }
  */ 
  
-/* function spinInCircle() { // CHANGE VALUE IF RETURN
- *     spin = spin + 1;
+/* function spinInCircle() { // HOW CHANGE VALUE IF REPEATED CHOICE
+ *    spin = spin + 1;
  *    if (spin == 3) {
  *         story("Why are you doing that?\
  *         \n It makes me a little nauseous just to watching you\n\n");
@@ -68,7 +69,7 @@ function checkAnswers(answer) {  // Matches Scenes  - replace with yours
  * }
  */
  
-/* function stayQuite() { // Message Example
+/* function stayQuite() { // SEQUENCE OF MESSAGES WITH TIME DELAYS BETWEEN
  * messages=["so your too good to talk to me huh",
  *         "big old person too proud to talk to a pixie",
  *         " you hear the pixie fly away in disgust"];
