@@ -22,15 +22,10 @@ function checkAnswers(answer) {  // Matches Scenes  - replace with yours
 	}
 }
 
-function enterKingdomOfWisdom() {
-	story("You are wandering along a road on a beautiful spring day with green meadows and gentle rolling hills. /
-        /n You do not have a destination and you have plenty of time./  
-	/n Suddenly a tollbooth appears in front of you. There is a man in the booth waiting to speak to you./ 
-        /nWhat do you do?");
+function enterKingdomOfWisdom() { /n Suddenly a tollbooth appears in front of you. There is a man in the booth waiting to speak to you./ /nWhat do you do?");
 	["Enter Now", "Sleep on it", "Tell Mom"];
 	answer = setOptions(choices);
 }
-
 function wildNightmares() {
 	story("Undefined");
 	choices = ["Undefined"];
