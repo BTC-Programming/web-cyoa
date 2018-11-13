@@ -39,11 +39,7 @@ function momCantSeeIt() {
 
 function tollbooth(){  // FIRST SCENE - WELCOMES PLAYER
 	var name = prompt("what is your name?");
-	story("You see a tollbooth appear from nowhere. \
-	\n On the window is a piece of paper\
-	\n That says \"Enter,  " + name + ".\"\
-	\n What do you do?");
-
+	story("You see a tollbooth appear from nowhere. \ \n On the window is a piece of paper\ \n That says \"Enter,  " + name + ".\"\ \n What do you do?");
 	choices = ["Enter now", "Sleep on it", "Tell mom"];
 	answer = setOptions(choices);
 }
