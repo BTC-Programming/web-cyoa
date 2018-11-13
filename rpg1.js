@@ -118,7 +118,6 @@ function goCandy() {
 
     choices = ["yes enter", "no run"];
     answer = setOptions(choices);
-   
 }
 
 function hangOut() {
