@@ -5,12 +5,6 @@ var name = "";
 var messages = [];
 var choices;
 var answer;
-var spin = 0;
-var hang = 0;
-var apple = false;
-var applePie = false;
-var poisonedApple = false;
-var candy = false;
 
 function checkAnswers(answer) {
     switch(answer) {
