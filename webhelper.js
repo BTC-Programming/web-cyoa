@@ -13,10 +13,7 @@ function setup() {
   story("Game Loading");
   setOptions(["test 1", "test 2", "test3"]); 
   buttonElement.innerHTML = "What will you do?"; 
-  buttonElement.onclick = function () {
-    var dropdown = document.getElementById("choices");
-    checkAnswers(dropdown.value);
-  }
+  buttonElement.setAttribute("onclick", "checkAnswers(dropdown.value)");
 }
 
 function setOptions(options) {
@@ -47,4 +44,3 @@ function delayText(text, delay) {
     callback(text);
   }, delay);
 }
-
