@@ -21,7 +21,7 @@ function setOptions(options) {
     dropdown.remove(0);
   }
   for (var i = 0; i < options.length; i++) {
-    var option = new Option(options[i], options[i]);
+    var option = new Option(options[i]);
     dropdown.options.add(option);
   }
 }
