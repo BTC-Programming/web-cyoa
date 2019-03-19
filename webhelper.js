@@ -9,8 +9,14 @@ function start() {
   town();
 }
 
-function story(text) {
-  currentStoryElement.innerHTML = text;
+function setup() {
+  story("Game Loading");
+  setOptions(["test 1", "test 2", "test3"]); 
+  buttonElement.innerHTML = "What will you do?"; 
+  buttonElement.onclick = function () {
+    var dropdown = document.getElementById("choices");
+    checkAnswers(dropdown.value);
+  }
 }
 
 function setOptions(options) {
@@ -21,6 +27,10 @@ function setOptions(options) {
     var option = new Option(options[i], options[i]);
     dropdown.options.add(option);
   }
+}
+
+function story(text) {
+  currentStoryElement.innerHTML = text;
 }
 
 function delayText(text, delay) {
@@ -38,12 +48,3 @@ function delayText(text, delay) {
   }, delay);
 }
 
-function setup() {
-  // setOptions();
-  setOptions(["test 1", "test 2", "test3"]); 
-  buttonElement.innerHTML = "What will you do?"; 
-  buttonElement.onclick = function () {
-    var dropdown = document.getElementById("choices");
-    checkAnswers(dropdown.value);
-  }
-}
