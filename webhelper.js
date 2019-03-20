@@ -1,17 +1,22 @@
 window.onload = start;
 
+var options=[];
 var buttonElement = document.getElementById("button1");
 var currentStoryElement = document.getElementById("currentStory");
 var dropdown = document.getElementById("choices");
+var messages = [];
+var choices;
+var answer;
 
 function start() {
   setup();
-  town();
+  scene1();
 }
 
 function setup() {
   story("Game Loading");
-  setOptions(["test 1", "test 2", "test3"]); 
+  options=["test 1", "test 2", "test3"];
+  setOptions(options); 
   buttonElement.innerHTML = "What will you do?"; 
   buttonElement.setAttribute("onclick", "checkAnswers(dropdown.value)");
 }
